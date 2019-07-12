@@ -112,6 +112,15 @@
     <Filter Include="変換用アセット">
       <UniqueIdentifier>{82621faf-8306-44c1-bdbf-bfdd763ca17c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ソース ファイル\MyScript">
+      <UniqueIdentifier>{31a3f302-1533-46d7-96ca-2575f21e5238}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\MyScript\Player">
+      <UniqueIdentifier>{7dfc3a94-df56-4d3e-ad32-3757472a13df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\MyScript\Character">
+      <UniqueIdentifier>{aa83e6dd-8e04-40ba-9515-b9baf4bccab6}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="GameMain.cpp">
@@ -255,6 +264,12 @@
     </ClCompile>
     <ClCompile Include="Extension\Direct2D\Direct2D.cpp">
       <Filter>ソース ファイル\拡張\Direct2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>ソース ファイル\MyScript\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Character.cpp">
+      <Filter>ソース ファイル\MyScript\Character</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -411,6 +426,12 @@
     </ClInclude>
     <ClInclude Include="Extension\Direct2D\Direct2D.hpp">
       <Filter>ヘッダー ファイル\拡張\Direct2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>ソース ファイル\MyScript\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Character.h">
+      <Filter>ソース ファイル\MyScript\Character</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
