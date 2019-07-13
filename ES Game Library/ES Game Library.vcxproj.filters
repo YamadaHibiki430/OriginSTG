@@ -265,11 +265,11 @@
     <ClCompile Include="Extension\Direct2D\Direct2D.cpp">
       <Filter>ソース ファイル\拡張\Direct2D</Filter>
     </ClCompile>
-    <ClCompile Include="Player.cpp">
-      <Filter>ソース ファイル\MyScript\Player</Filter>
-    </ClCompile>
-    <ClCompile Include="Character.cpp">
+    <ClCompile Include="MyScript\Character\Character.cpp">
       <Filter>ソース ファイル\MyScript\Character</Filter>
+    </ClCompile>
+    <ClCompile Include="MyScript\Player\Player.cpp">
+      <Filter>ソース ファイル\MyScript\Player</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -427,11 +427,11 @@
     <ClInclude Include="Extension\Direct2D\Direct2D.hpp">
       <Filter>ヘッダー ファイル\拡張\Direct2D</Filter>
     </ClInclude>
-    <ClInclude Include="Player.h">
-      <Filter>ソース ファイル\MyScript\Player</Filter>
-    </ClInclude>
-    <ClInclude Include="Character.h">
+    <ClInclude Include="MyScript\Character\Character.h">
       <Filter>ソース ファイル\MyScript\Character</Filter>
+    </ClInclude>
+    <ClInclude Include="MyScript\Player\Player.h">
+      <Filter>ソース ファイル\MyScript\Player</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
