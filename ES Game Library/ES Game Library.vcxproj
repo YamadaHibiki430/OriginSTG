@@ -163,7 +163,10 @@
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="MyClass\Scene\MainScene.cpp" />
+    <ClCompile Include="MyClass\Scene\SceneManager.cpp" />
     <ClCompile Include="MyScript\Character\Character.cpp" />
+    <ClCompile Include="MyScript\Input\Input.cpp" />
     <ClCompile Include="MyScript\Player\Player.cpp" />
     <ClCompile Include="StdAfx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
@@ -218,7 +221,13 @@
     <ClInclude Include="GameMain.h" />
     <ClInclude Include="GameScene\SceneShared.hpp" />
     <ClInclude Include="GameScene\TemplateScene.hpp" />
+    <ClInclude Include="MyClass\Scene\BaseScreen.h" />
+    <ClInclude Include="MyClass\Scene\MainScene.h" />
+    <ClInclude Include="MyClass\Scene\ResultScene.h" />
+    <ClInclude Include="MyClass\Scene\SceneManager.h" />
+    <ClInclude Include="MyClass\Scene\TitleScene.h" />
     <ClInclude Include="MyScript\Character\Character.h" />
+    <ClInclude Include="MyScript\Input\Input.h" />
     <ClInclude Include="MyScript\Player\Player.h" />
     <ClInclude Include="StdAfx.h" />
     <ClInclude Include="ESGLib.h" />

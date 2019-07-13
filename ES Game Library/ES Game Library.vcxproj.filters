@@ -112,14 +112,20 @@
     <Filter Include="変換用アセット">
       <UniqueIdentifier>{82621faf-8306-44c1-bdbf-bfdd763ca17c}</UniqueIdentifier>
     </Filter>
-    <Filter Include="ソース ファイル\MyScript">
+    <Filter Include="MyClass">
       <UniqueIdentifier>{31a3f302-1533-46d7-96ca-2575f21e5238}</UniqueIdentifier>
     </Filter>
-    <Filter Include="ソース ファイル\MyScript\Player">
+    <Filter Include="MyClass\Player">
       <UniqueIdentifier>{7dfc3a94-df56-4d3e-ad32-3757472a13df}</UniqueIdentifier>
     </Filter>
-    <Filter Include="ソース ファイル\MyScript\Character">
+    <Filter Include="MyClass\Character">
       <UniqueIdentifier>{aa83e6dd-8e04-40ba-9515-b9baf4bccab6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MyClass\Input">
+      <UniqueIdentifier>{037fc8e1-9a31-4d20-9888-c38bd8f5bd82}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MyClass\Scene">
+      <UniqueIdentifier>{506be805-ff09-4492-a647-e77c8f91a472}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -266,10 +272,19 @@
       <Filter>ソース ファイル\拡張\Direct2D</Filter>
     </ClCompile>
     <ClCompile Include="MyScript\Character\Character.cpp">
-      <Filter>ソース ファイル\MyScript\Character</Filter>
+      <Filter>MyClass\Character</Filter>
     </ClCompile>
     <ClCompile Include="MyScript\Player\Player.cpp">
-      <Filter>ソース ファイル\MyScript\Player</Filter>
+      <Filter>MyClass\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="MyScript\Input\Input.cpp">
+      <Filter>MyClass\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="MyClass\Scene\SceneManager.cpp">
+      <Filter>MyClass\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="MyClass\Scene\MainScene.cpp">
+      <Filter>MyClass\Scene</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -428,10 +443,28 @@
       <Filter>ヘッダー ファイル\拡張\Direct2D</Filter>
     </ClInclude>
     <ClInclude Include="MyScript\Character\Character.h">
-      <Filter>ソース ファイル\MyScript\Character</Filter>
+      <Filter>MyClass\Character</Filter>
     </ClInclude>
     <ClInclude Include="MyScript\Player\Player.h">
-      <Filter>ソース ファイル\MyScript\Player</Filter>
+      <Filter>MyClass\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="MyScript\Input\Input.h">
+      <Filter>MyClass\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="MyClass\Scene\MainScene.h">
+      <Filter>MyClass\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="MyClass\Scene\ResultScene.h">
+      <Filter>MyClass\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="MyClass\Scene\SceneManager.h">
+      <Filter>MyClass\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="MyClass\Scene\TitleScene.h">
+      <Filter>MyClass\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="MyClass\Scene\BaseScreen.h">
+      <Filter>MyClass\Scene</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
