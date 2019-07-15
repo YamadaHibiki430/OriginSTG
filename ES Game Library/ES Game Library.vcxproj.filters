@@ -127,6 +127,9 @@
     <Filter Include="MyClass\Scene">
       <UniqueIdentifier>{506be805-ff09-4492-a647-e77c8f91a472}</UniqueIdentifier>
     </Filter>
+    <Filter Include="MyClass\HitArea">
+      <UniqueIdentifier>{46ca2a2d-4c63-4cd8-b738-f30f06528e99}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="GameMain.cpp">
@@ -271,20 +274,23 @@
     <ClCompile Include="Extension\Direct2D\Direct2D.cpp">
       <Filter>ソース ファイル\拡張\Direct2D</Filter>
     </ClCompile>
-    <ClCompile Include="MyScript\Character\Character.cpp">
-      <Filter>MyClass\Character</Filter>
-    </ClCompile>
-    <ClCompile Include="MyScript\Player\Player.cpp">
-      <Filter>MyClass\Player</Filter>
-    </ClCompile>
-    <ClCompile Include="MyScript\Input\Input.cpp">
-      <Filter>MyClass\Input</Filter>
-    </ClCompile>
     <ClCompile Include="MyClass\Scene\SceneManager.cpp">
       <Filter>MyClass\Scene</Filter>
     </ClCompile>
     <ClCompile Include="MyClass\Scene\MainScene.cpp">
       <Filter>MyClass\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="MyClass\Player\Player.cpp">
+      <Filter>MyClass\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="MyClass\Character\Character.cpp">
+      <Filter>MyClass\Character</Filter>
+    </ClCompile>
+    <ClCompile Include="MyClass\Input\Input.cpp">
+      <Filter>MyClass\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="MyClass\HitArea\HitArea.cpp">
+      <Filter>MyClass\HitArea</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -442,15 +448,6 @@
     <ClInclude Include="Extension\Direct2D\Direct2D.hpp">
       <Filter>ヘッダー ファイル\拡張\Direct2D</Filter>
     </ClInclude>
-    <ClInclude Include="MyScript\Character\Character.h">
-      <Filter>MyClass\Character</Filter>
-    </ClInclude>
-    <ClInclude Include="MyScript\Player\Player.h">
-      <Filter>MyClass\Player</Filter>
-    </ClInclude>
-    <ClInclude Include="MyScript\Input\Input.h">
-      <Filter>MyClass\Input</Filter>
-    </ClInclude>
     <ClInclude Include="MyClass\Scene\MainScene.h">
       <Filter>MyClass\Scene</Filter>
     </ClInclude>
@@ -465,6 +462,18 @@
     </ClInclude>
     <ClInclude Include="MyClass\Scene\BaseScreen.h">
       <Filter>MyClass\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="MyClass\Player\Player.h">
+      <Filter>MyClass\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="MyClass\Character\Character.h">
+      <Filter>MyClass\Character</Filter>
+    </ClInclude>
+    <ClInclude Include="MyClass\Input\Input.h">
+      <Filter>MyClass\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="MyClass\HitArea\HitArea.h">
+      <Filter>MyClass\HitArea</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

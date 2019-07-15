@@ -11,7 +11,7 @@ bool GameMain::Initialize()
 {
 	// TODO: Add your initialization logic here
 	WindowTitle(_T("ES Game Library"));
-
+	SceneManager::ChangeScene(SceneManager::MAIN);
 
 	return true;
 }
@@ -36,7 +36,7 @@ void GameMain::Finalize()
 int GameMain::Update()
 {
 	// TODO: Add your update logic here
-
+	sceneManager.Update();
 
 	return 0;
 }
@@ -50,10 +50,10 @@ void GameMain::Draw()
 	GraphicsDevice.Clear(Color_CornflowerBlue);
 
 	GraphicsDevice.BeginScene();
-
+	sceneManager.Draw3D();
 
 	SpriteBatch.Begin();
-
+	sceneManager.Draw2D();
 
 	SpriteBatch.End();
 

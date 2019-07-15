@@ -13,18 +13,22 @@ enum Character_Type
 
 class Character {
 private:
-	static SPRITE loaded_images[TYPE_NUM];
+	static MODEL loaded_model[TYPE_NUM];
 	bool remove_flag;
 protected:
-	SPRITE image;
+	MODEL model;
+	float x, y;
 	float width, height;
-	float hit_x, hit_y;
-	float hit_width, hit_height;
 	float speed;
 	void remove() { remove_flag = true; }
 public:
 	Character();
-
-
+	void SetModel(LPCTSTR file_name);
+	void SetPosition(float px, float py);
+	bool IsRemove() { return remove_flag; }
+	virtual Character_Type GetType() = 0;
+	virtual void Update() = 0;
+	virtual void Draw3D();
+	virtual void hit() {};
 };
 
