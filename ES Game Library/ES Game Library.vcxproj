@@ -165,7 +165,6 @@
     </ClCompile>
     <ClCompile Include="MyClass\Character\Character.cpp" />
     <ClCompile Include="MyClass\HitArea\HitArea.cpp" />
-    <ClCompile Include="MyClass\Input\Input.cpp" />
     <ClCompile Include="MyClass\Player\Player.cpp" />
     <ClCompile Include="MyClass\Scene\MainScene.cpp" />
     <ClCompile Include="MyClass\Scene\SceneManager.cpp" />
@@ -224,9 +223,8 @@
     <ClInclude Include="GameScene\TemplateScene.hpp" />
     <ClInclude Include="MyClass\Character\Character.h" />
     <ClInclude Include="MyClass\HitArea\HitArea.h" />
-    <ClInclude Include="MyClass\Input\Input.h" />
     <ClInclude Include="MyClass\Player\Player.h" />
-    <ClInclude Include="MyClass\Scene\BaseScreen.h" />
+    <ClInclude Include="MyClass\Scene\BaseScene.h" />
     <ClInclude Include="MyClass\Scene\MainScene.h" />
     <ClInclude Include="MyClass\Scene\ResultScene.h" />
     <ClInclude Include="MyClass\Scene\SceneManager.h" />

@@ -2,10 +2,10 @@
 
 std::list<HitArea*> HitArea::HitArea_List;
 
-void HitArea::Init() {
+HitArea::HitArea() {
 	SetHitArea(1.f, 1.f, 1.f, 1.f);
 	HitArea_List.push_back(this);
-	SetHitType(TYPE_NONE);
+	SetHitType(H_TYPE_NONE);
 }
 
 void HitArea::SetHitType(Hit_Type hittype) {
@@ -21,7 +21,6 @@ void HitArea::SetHitArea(float hx, float hy, float hw, float hh) {
 	hit_width = hw; hit_height = hh;
 }
 
-
 bool HitArea::IsHitType(Hit_Type hittype) {
 	bool result = false;
 	std::list<HitArea*> HitList = this->IsHitArea_List();
@@ -32,7 +31,6 @@ bool HitArea::IsHitType(Hit_Type hittype) {
 	
 	return result;
 }
-
 
 bool HitArea::IsHit(HitArea* other) {
 	int x1 = x + hit_x;

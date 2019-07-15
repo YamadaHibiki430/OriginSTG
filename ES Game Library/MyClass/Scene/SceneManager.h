@@ -1,5 +1,5 @@
 #pragma once
-#include"BaseScreen.h"
+#include"BaseScene.h"
 #include"MainScene.h"
 #include"TitleScene.h"
 #include"ResultScene.h"

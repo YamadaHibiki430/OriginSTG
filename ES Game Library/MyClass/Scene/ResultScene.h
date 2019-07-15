@@ -1,5 +1,5 @@
 #pragma once
-#include"BaseScreen.h"
+#include"BaseScene.h"
 class ResultScene :public BaseScene {
 public:
 	void Initialize() {};

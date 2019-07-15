@@ -13,6 +13,12 @@ bool GameMain::Initialize()
 	WindowTitle(_T("ES Game Library"));
 	SceneManager::ChangeScene(SceneManager::MAIN);
 
+	// ビューポート情報取得
+	Viewport   view = GraphicsDevice.GetViewport();
+	// カメラ設定
+	Camera->SetView(Vector3(0.0f, 0.0f, -40.0f), Vector3(0.0f, 0.0f, 0.0f));
+	Camera->SetPerspectiveFieldOfView(45.0f, (float)view.Width, (float)view.Height, 1.0f, 10000.0f);
+	GraphicsDevice.SetCamera(Camera);
 	return true;
 }
 

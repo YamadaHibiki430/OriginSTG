@@ -3,11 +3,11 @@
 
 enum Hit_Type
 {
-	TYPE_NONE,
-	TYPE_PLAYER,
-	TYPE_SHOT,
-	TYPE_ENEMY,
-	TYPE_NUM
+	H_TYPE_NONE,
+	H_TYPE_PLAYER,
+	H_TYPE_SHOT,
+	H_TYPE_ENEMY,
+	H_YPE_NUM
 };
 
 class HitArea {
@@ -18,7 +18,7 @@ private:
 	float hit_width, hit_height;
 	Hit_Type type;
 public:
-	void Init();
+	HitArea();
 	void SetHitType(Hit_Type hittype);
 	Hit_Type GetHitType() { return type; }
 	void SetHitPosition(float px, float py);

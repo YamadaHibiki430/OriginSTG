@@ -58,7 +58,7 @@ private:
 private:
 	// •Ï”éŒ¾
 	SceneManager sceneManager;
-
+	CAMERA   Camera;
 	// ŠÖ”éŒ¾
 
 };

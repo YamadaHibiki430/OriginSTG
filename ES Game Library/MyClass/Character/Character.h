@@ -9,6 +9,9 @@ enum Character_Type
 	TYPE_NUM
 };
 
+class Character;
+
+typedef std::shared_ptr<Character> Character_Ref;
 
 
 class Character {
@@ -22,13 +25,12 @@ protected:
 	float speed;
 	void remove() { remove_flag = true; }
 public:
-	Character();
+	
 	void SetModel(LPCTSTR file_name);
 	void SetPosition(float px, float py);
 	bool IsRemove() { return remove_flag; }
 	virtual Character_Type GetType() = 0;
 	virtual void Update() = 0;
 	virtual void Draw3D();
-	virtual void hit() {};
 };
 

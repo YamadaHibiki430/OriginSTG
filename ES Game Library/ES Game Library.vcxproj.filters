@@ -286,9 +286,6 @@
     <ClCompile Include="MyClass\Character\Character.cpp">
       <Filter>MyClass\Character</Filter>
     </ClCompile>
-    <ClCompile Include="MyClass\Input\Input.cpp">
-      <Filter>MyClass\Input</Filter>
-    </ClCompile>
     <ClCompile Include="MyClass\HitArea\HitArea.cpp">
       <Filter>MyClass\HitArea</Filter>
     </ClCompile>
@@ -460,20 +457,17 @@
     <ClInclude Include="MyClass\Scene\TitleScene.h">
       <Filter>MyClass\Scene</Filter>
     </ClInclude>
-    <ClInclude Include="MyClass\Scene\BaseScreen.h">
-      <Filter>MyClass\Scene</Filter>
-    </ClInclude>
     <ClInclude Include="MyClass\Player\Player.h">
       <Filter>MyClass\Player</Filter>
     </ClInclude>
     <ClInclude Include="MyClass\Character\Character.h">
       <Filter>MyClass\Character</Filter>
     </ClInclude>
-    <ClInclude Include="MyClass\Input\Input.h">
-      <Filter>MyClass\Input</Filter>
-    </ClInclude>
     <ClInclude Include="MyClass\HitArea\HitArea.h">
       <Filter>MyClass\HitArea</Filter>
+    </ClInclude>
+    <ClInclude Include="MyClass\Scene\BaseScene.h">
+      <Filter>MyClass\Scene</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

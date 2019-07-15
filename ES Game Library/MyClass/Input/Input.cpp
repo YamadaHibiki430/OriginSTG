@@ -2,12 +2,12 @@
 #include "Input.h"
 
 //static
+KeyboardState Input::_keystate = Keyboard->GetState();
+KeyboardBuffer Input::_keybuf = Keyboard->GetBuffer();
 int Input::PadPadID[PAD_MAX];
 BYTE  Input::buttonID[PAD_MAX][BUTTON_MAX];
 int  Input::keybordID[BUTTON_MAX];
 int Input::KeyBordPlayerID = 0;
-KeyboardState Input::_keystate = Keyboard->GetState();
-KeyboardBuffer Input::_keybuf = Keyboard->GetBuffer();
 
 void Input::Init() {
    //ゲームパッド使用宣言

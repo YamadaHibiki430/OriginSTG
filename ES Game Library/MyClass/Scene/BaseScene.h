@@ -1,5 +1,6 @@
 #pragma once
 #include "../../ESGLib.h"
+#include "../Character/Character.h"
 #include "../Player/Player.h"
 class BaseScene {
 public:
