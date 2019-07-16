@@ -30,6 +30,7 @@ private:
 public:
       virtual Input::~Input() {};
 	static void Input::Init();
+	static void Input::Update();
 
 	static bool Input::GetPadInputDown(int PadID, int KeyID);
 	static bool Input::GetPadInput(int PadID, int KeyID);

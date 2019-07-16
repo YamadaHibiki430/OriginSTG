@@ -163,8 +163,10 @@
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="MyClass\Bullet\Bullet.cpp" />
     <ClCompile Include="MyClass\Character\Character.cpp" />
     <ClCompile Include="MyClass\HitArea\HitArea.cpp" />
+    <ClCompile Include="MyClass\Input\Input.cpp" />
     <ClCompile Include="MyClass\Player\Player.cpp" />
     <ClCompile Include="MyClass\Scene\MainScene.cpp" />
     <ClCompile Include="MyClass\Scene\SceneManager.cpp" />
@@ -221,8 +223,10 @@
     <ClInclude Include="GameMain.h" />
     <ClInclude Include="GameScene\SceneShared.hpp" />
     <ClInclude Include="GameScene\TemplateScene.hpp" />
+    <ClInclude Include="MyClass\Bullet\Bullet.h" />
     <ClInclude Include="MyClass\Character\Character.h" />
     <ClInclude Include="MyClass\HitArea\HitArea.h" />
+    <ClInclude Include="MyClass\Input\Input.h" />
     <ClInclude Include="MyClass\Player\Player.h" />
     <ClInclude Include="MyClass\Scene\BaseScene.h" />
     <ClInclude Include="MyClass\Scene\MainScene.h" />

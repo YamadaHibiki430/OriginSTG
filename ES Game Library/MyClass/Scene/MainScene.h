@@ -3,7 +3,6 @@
 
 class MainScene:public BaseScene{
 private:
-	
 	std::list<Character_Ref> Character_List;
 	void AddLList(Character_Ref& chara);
 public:

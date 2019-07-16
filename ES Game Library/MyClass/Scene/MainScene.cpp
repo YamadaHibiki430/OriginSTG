@@ -5,7 +5,7 @@ void MainScene::Initialize() {
 	AddLList(player);
 }
 void MainScene::Update() {
-	
+	std::for_each(Character_List.begin(), Character_List.end(), [](Character_Ref& chara) {chara->Update(); });
 }
 void MainScene::Draw3D() {
 	std::for_each(Character_List.begin(), Character_List.end(), [](Character_Ref& chara) {chara->Draw3D(); });

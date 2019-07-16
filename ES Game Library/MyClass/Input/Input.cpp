@@ -1,13 +1,12 @@
-#include "../../ESGLib.h"
 #include "Input.h"
 
 //static
-KeyboardState Input::_keystate = Keyboard->GetState();
-KeyboardBuffer Input::_keybuf = Keyboard->GetBuffer();
 int Input::PadPadID[PAD_MAX];
 BYTE  Input::buttonID[PAD_MAX][BUTTON_MAX];
 int  Input::keybordID[BUTTON_MAX];
 int Input::KeyBordPlayerID = 0;
+KeyboardState Input::_keystate;
+KeyboardBuffer Input::_keybuf;
 
 void Input::Init() {
    //ゲームパッド使用宣言
@@ -23,6 +22,11 @@ void Input::Init() {
 	   ResetConfigButton(i);
 	}
 }
+void Input::Update() {
+	_keystate = Keyboard->GetState();
+	_keybuf = Keyboard->GetBuffer();
+}
+
 bool Input::GetPadInputDown(int PadID, int KeyID) {
 	GamePadBuffer _padbuf = GamePad(PadPadID[PadID])->GetBuffer();
 	return (BOOL)_padbuf.IsPressed(buttonID[PadPadID[PadID]][KeyID]);
@@ -149,4 +153,5 @@ void Input::ResetConfigKey() {
    SetConfigKeyID(0, Keys_Z);
    SetConfigKeyID(1, Keys_X);
    SetConfigKeyID(2, Keys_LeftShift);
+   SetConfigKeyID(3, Keys_Space);
 }

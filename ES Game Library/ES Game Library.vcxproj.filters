@@ -130,6 +130,9 @@
     <Filter Include="MyClass\HitArea">
       <UniqueIdentifier>{46ca2a2d-4c63-4cd8-b738-f30f06528e99}</UniqueIdentifier>
     </Filter>
+    <Filter Include="MyClass\Bullet">
+      <UniqueIdentifier>{0fd22d3c-a894-4638-8498-7f9150bd5b23}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="GameMain.cpp">
@@ -288,6 +291,12 @@
     </ClCompile>
     <ClCompile Include="MyClass\HitArea\HitArea.cpp">
       <Filter>MyClass\HitArea</Filter>
+    </ClCompile>
+    <ClCompile Include="MyClass\Input\Input.cpp">
+      <Filter>MyClass\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="MyClass\Bullet\Bullet.cpp">
+      <Filter>MyClass\Bullet</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -468,6 +477,12 @@
     </ClInclude>
     <ClInclude Include="MyClass\Scene\BaseScene.h">
       <Filter>MyClass\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="MyClass\Input\Input.h">
+      <Filter>MyClass\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="MyClass\Bullet\Bullet.h">
+      <Filter>MyClass\Bullet</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

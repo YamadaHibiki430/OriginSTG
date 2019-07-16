@@ -12,11 +12,12 @@ bool GameMain::Initialize()
 	// TODO: Add your initialization logic here
 	WindowTitle(_T("ES Game Library"));
 	SceneManager::ChangeScene(SceneManager::MAIN);
+	Input::Init();
 
 	// ビューポート情報取得
 	Viewport   view = GraphicsDevice.GetViewport();
 	// カメラ設定
-	Camera->SetView(Vector3(0.0f, 0.0f, -40.0f), Vector3(0.0f, 0.0f, 0.0f));
+	Camera->SetView(Vector3(0.0f, 0.0f, -100.0f), Vector3(0.0f, 0.0f, 0.0f));
 	Camera->SetPerspectiveFieldOfView(45.0f, (float)view.Width, (float)view.Height, 1.0f, 10000.0f);
 	GraphicsDevice.SetCamera(Camera);
 	return true;
@@ -41,6 +42,7 @@ void GameMain::Finalize()
 /// </returns>
 int GameMain::Update()
 {
+	Input::Update();
 	// TODO: Add your update logic here
 	sceneManager.Update();
 

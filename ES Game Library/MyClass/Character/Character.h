@@ -1,5 +1,7 @@
 #pragma once
 #include "../../ESGLib.h"
+#include "../HitArea/HitArea.h"
+#include "../Bullet/Bullet.h"
 
 enum Character_Type
 {
@@ -13,7 +15,6 @@ class Character;
 
 typedef std::shared_ptr<Character> Character_Ref;
 
-
 class Character {
 private:
 	static MODEL loaded_model[TYPE_NUM];
@@ -21,8 +22,6 @@ private:
 protected:
 	MODEL model;
 	float x, y;
-	float width, height;
-	float speed;
 	void remove() { remove_flag = true; }
 public:
 	

@@ -47,6 +47,7 @@ bool HitArea::IsHit(HitArea* other) {
 	return false;
 }
 
+
 std::list<HitArea*> HitArea::IsHitArea_List() {
 std::list<HitArea*> result;
 for (auto&& h : HitArea_List) {
