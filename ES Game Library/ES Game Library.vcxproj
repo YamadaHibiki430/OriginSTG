@@ -165,6 +165,7 @@
     </ClCompile>
     <ClCompile Include="MyClass\Bullet\Bullet.cpp" />
     <ClCompile Include="MyClass\Character\Character.cpp" />
+    <ClCompile Include="MyClass\Enemy\Enemy.cpp" />
     <ClCompile Include="MyClass\HitArea\HitArea.cpp" />
     <ClCompile Include="MyClass\Input\Input.cpp" />
     <ClCompile Include="MyClass\Player\Player.cpp" />
@@ -225,6 +226,7 @@
     <ClInclude Include="GameScene\TemplateScene.hpp" />
     <ClInclude Include="MyClass\Bullet\Bullet.h" />
     <ClInclude Include="MyClass\Character\Character.h" />
+    <ClInclude Include="MyClass\Enemy\Enemy.h" />
     <ClInclude Include="MyClass\HitArea\HitArea.h" />
     <ClInclude Include="MyClass\Input\Input.h" />
     <ClInclude Include="MyClass\Player\Player.h" />

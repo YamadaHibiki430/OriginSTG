@@ -8,6 +8,8 @@ enum Bullet_Type {
 	AIMING_TYPE
 };
 
+
+
 class BulletProduct {
 public:
 	virtual void Update() = 0;
@@ -20,7 +22,7 @@ private:
 	HitArea* hitarea;
 	MODEL model;
 	float x, y;
-	float speed;
+	float speed = 5.5f;
 public:
 	NomalBullet();
 	void Update();

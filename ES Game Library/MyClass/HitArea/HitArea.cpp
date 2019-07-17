@@ -24,7 +24,6 @@ void HitArea::SetHitArea(float hx, float hy, float hw, float hh) {
 bool HitArea::IsHitType(Hit_Type hittype) {
 	bool result = false;
 	std::list<HitArea*> HitList = this->IsHitArea_List();
-
 	for (auto&& other : HitList) {
 		if (other->GetHitType() == hittype)result = true;
 	}

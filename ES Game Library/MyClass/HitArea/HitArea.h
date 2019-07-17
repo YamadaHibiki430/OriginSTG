@@ -26,6 +26,7 @@ public:
 	bool IsHitType(Hit_Type hittype);
 	bool IsHit(HitArea* other);
 
+
 	HitArea* HitArea::GetThis() { return this; }
 	std::list<HitArea*> HitArea::IsHitArea_List();
 };

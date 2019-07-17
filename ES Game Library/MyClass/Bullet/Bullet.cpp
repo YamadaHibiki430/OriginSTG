@@ -1,9 +1,11 @@
 #include "Bullet.h"
 
 NomalBullet::NomalBullet() {
-	model = GraphicsDevice.CreateModelFromFile(_T("bullet_medium_blue.x"));
+	model = GraphicsDevice.CreateModelFromFile(_T("Model/Bullet/bullet_medium_blue.x"));
 	hitarea = new HitArea();
 	hitarea->SetHitPosition(x, y);
+	model->SetScale(1.f);
+	model->SetRotation(Vector3(-90.0f, 0.0f, 0.0f));
 }
 
 void NomalBullet::Update() {
@@ -11,7 +13,7 @@ void NomalBullet::Update() {
 }
 
 void NomalBullet::Draw3D() {
-	model->SetPosition(Vector3(x,y,0.f));
+	model->SetPosition(Vector3(x, y, 0.f));
 	model->Draw();
 }
 

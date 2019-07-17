@@ -5,6 +5,10 @@ void MainScene::Initialize() {
 	AddLList(player);
 }
 void MainScene::Update() {
+	if (MathHelper_Random(0, 50) == 0) {
+		Character_Ref enemy(new Enemy());
+		AddLList(enemy);
+	}
 	std::for_each(Character_List.begin(), Character_List.end(), [](Character_Ref& chara) {chara->Update(); });
 }
 void MainScene::Draw3D() {
