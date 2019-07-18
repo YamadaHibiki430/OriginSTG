@@ -11,5 +11,5 @@ public:
 	Enemy();
 	Character_Type GetType() { return TYPE_ENEMY; }
 	void Update();
-	void Draw();
+	void DrawCanvas() {};
 };

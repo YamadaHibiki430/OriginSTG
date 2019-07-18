@@ -31,5 +31,6 @@ public:
 	virtual Character_Type GetType() = 0;
 	virtual void Update() = 0;
 	virtual void Draw3D();
+	virtual void DrawCanvas() = 0;
 };
 

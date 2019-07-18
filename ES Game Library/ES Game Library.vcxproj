@@ -164,6 +164,7 @@
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="MyClass\Bullet\Bullet.cpp" />
+    <ClCompile Include="MyClass\Canvas\CanvasManager.cpp" />
     <ClCompile Include="MyClass\Character\Character.cpp" />
     <ClCompile Include="MyClass\Enemy\Enemy.cpp" />
     <ClCompile Include="MyClass\HitArea\HitArea.cpp" />
@@ -225,6 +226,7 @@
     <ClInclude Include="GameScene\SceneShared.hpp" />
     <ClInclude Include="GameScene\TemplateScene.hpp" />
     <ClInclude Include="MyClass\Bullet\Bullet.h" />
+    <ClInclude Include="MyClass\Canvas\CanvasManager.h" />
     <ClInclude Include="MyClass\Character\Character.h" />
     <ClInclude Include="MyClass\Enemy\Enemy.h" />
     <ClInclude Include="MyClass\HitArea\HitArea.h" />

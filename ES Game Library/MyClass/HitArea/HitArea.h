@@ -1,5 +1,6 @@
 #pragma once
 #include "../../ESGLib.h"
+#include "../Canvas/CanvasManager.h"
 
 enum Hit_Type
 {
@@ -17,6 +18,7 @@ private:
 	float hit_x, hit_y;
 	float hit_width, hit_height;
 	Hit_Type type;
+	CanvasManager* canvas;
 public:
 	HitArea();
 	void SetHitType(Hit_Type hittype);
@@ -25,7 +27,7 @@ public:
 	void SetHitArea(float hx, float hy, float hw, float hh);
 	bool IsHitType(Hit_Type hittype);
 	bool IsHit(HitArea* other);
-
+	void Draw();
 
 	HitArea* HitArea::GetThis() { return this; }
 	std::list<HitArea*> HitArea::IsHitArea_List();

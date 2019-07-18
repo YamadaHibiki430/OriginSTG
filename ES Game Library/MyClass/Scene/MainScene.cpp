@@ -20,6 +20,10 @@ void MainScene::Draw2D() {
 void MainScene::DrawAlpha3D() {
 	
 }
+void MainScene::DrawCanvas() {
+	std::for_each(Character_List.begin(), Character_List.end(), [](Character_Ref& chara) {chara->DrawCanvas(); });
+}
+
 void MainScene::AddLList(Character_Ref& chara) {
 	Character_List.push_back(chara);
 }

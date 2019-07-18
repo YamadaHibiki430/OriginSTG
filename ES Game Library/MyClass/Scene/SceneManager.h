@@ -16,6 +16,7 @@ public:
 	static void Update();
 	static void Draw3D();
 	static void Draw2D();
+	static void DrawCanvas();
 	static void DrawAlpha3D();
 
 	static BaseScene *presently_scene;     

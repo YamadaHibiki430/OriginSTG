@@ -14,4 +14,5 @@ Enemy::Enemy() {
 
 void Enemy::Update() {
 	y -= 0.5f;
+	hitarea->SetHitPosition(x, y);
 }

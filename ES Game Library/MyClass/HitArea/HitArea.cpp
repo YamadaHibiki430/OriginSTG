@@ -6,6 +6,7 @@ HitArea::HitArea() {
 	SetHitArea(1.f, 1.f, 1.f, 1.f);
 	HitArea_List.push_back(this);
 	SetHitType(H_TYPE_NONE);
+	canvas = new CanvasManager();
 }
 
 void HitArea::SetHitType(Hit_Type hittype) {
@@ -44,6 +45,14 @@ bool HitArea::IsHit(HitArea* other) {
 
 	if (x1 + w1 > x2 && x1 < x2 + w2 && y1 + h1 > y2 && y1 < y2 + h2) return true;
 	return false;
+}
+
+void HitArea::Draw() {
+	Vector3 start = GraphicsDevice.WorldToScreen(Vector3(x + hit_x, y + hit_y, 0));
+	Vector3 end = GraphicsDevice.WorldToScreen(Vector3(x + hit_x + hit_width, y + hit_y + hit_height, 0));
+
+	canvas->DrawRect(start.x, start.y, end.x, end.y);
+	//canvas->DrawRect(x + hit_x, y + hit_y, hit_x + hit_width, hit_y + hit_height);
 }
 
 

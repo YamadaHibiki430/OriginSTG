@@ -136,6 +136,9 @@
     <Filter Include="MyClass\Enemy">
       <UniqueIdentifier>{03f0685d-18e8-4d28-aea4-fbdcec87669b}</UniqueIdentifier>
     </Filter>
+    <Filter Include="MyClass\Canvas">
+      <UniqueIdentifier>{bcd232df-fc88-4e04-9de7-ac876505c4e0}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="GameMain.cpp">
@@ -303,6 +306,9 @@
     </ClCompile>
     <ClCompile Include="MyClass\Enemy\Enemy.cpp">
       <Filter>MyClass\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="MyClass\Canvas\CanvasManager.cpp">
+      <Filter>MyClass\Canvas</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -492,6 +498,9 @@
     </ClInclude>
     <ClInclude Include="MyClass\Enemy\Enemy.h">
       <Filter>MyClass\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="MyClass\Canvas\CanvasManager.h">
+      <Filter>MyClass\Canvas</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

@@ -15,6 +15,7 @@ Player::Player() {
 }
 
 void Player::Update() {
+	hitarea->SetHitPosition(x, y);
 	PlayerMove();
 	std::for_each(Bullet_List.begin(), Bullet_List.end(), [](BulletProduct* bullet) {bullet->Update(); });
 	if (hitarea->IsHitType(H_TYPE_ENEMY) == true) {
@@ -27,6 +28,10 @@ void Player::Draw3D() {
 	model->Draw();
 	std::for_each(Bullet_List.begin(), Bullet_List.end(), [](BulletProduct* bullet) {bullet->Draw3D(); });
 }
+void Player::DrawCanvas() {
+	hitarea->Draw();
+}
+
 void Player::Shot() {
 	bulletfactory = new BulletStationeryFactory();
 	BulletProduct* Nomal = bulletfactory->Create(NOMAL_TYPE);

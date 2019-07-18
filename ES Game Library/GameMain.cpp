@@ -66,4 +66,7 @@ void GameMain::Draw()
 	SpriteBatch.End();
 
 	GraphicsDevice.EndScene();
+	sceneManager.DrawCanvas();
+
+	GraphicsDevice.UnlockCanvas();
 }

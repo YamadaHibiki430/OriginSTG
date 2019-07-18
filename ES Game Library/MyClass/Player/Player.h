@@ -17,6 +17,7 @@ public:
 	Character_Type GetType() { return TYPE_PLAYER; }
 	void Update();
 	void Draw3D();
+	void DrawCanvas();
 
 };
 

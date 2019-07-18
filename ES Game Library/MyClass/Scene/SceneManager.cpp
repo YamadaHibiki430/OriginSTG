@@ -34,3 +34,6 @@ void SceneManager::DrawAlpha3D() {
 	presently_scene->DrawAlpha3D();
 }
 
+void SceneManager::DrawCanvas() {
+	presently_scene->DrawCanvas();
+}
