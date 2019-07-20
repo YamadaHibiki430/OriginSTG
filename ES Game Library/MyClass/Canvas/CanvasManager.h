@@ -3,7 +3,6 @@
 
 class CanvasManager {
 private:
-	
 	Paint paint;
 public:
 	CanvasManager();

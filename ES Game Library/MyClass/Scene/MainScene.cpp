@@ -10,6 +10,9 @@ void MainScene::Update() {
 		AddLList(enemy);
 	}
 	std::for_each(Character_List.begin(), Character_List.end(), [](Character_Ref& chara) {chara->Update(); });
+
+	auto end = std::remove_if(Character_List.begin(), Character_List.end(), [](Character_Ref& chara) {chara->IsRemove(); });
+	Character_List.erase(end, Character_List.end());
 }
 void MainScene::Draw3D() {
 	std::for_each(Character_List.begin(), Character_List.end(), [](Character_Ref& chara) {chara->Draw3D(); });
@@ -21,7 +24,6 @@ void MainScene::DrawAlpha3D() {
 	
 }
 void MainScene::DrawCanvas() {
-	std::for_each(Character_List.begin(), Character_List.end(), [](Character_Ref& chara) {chara->DrawCanvas(); });
 }
 
 void MainScene::AddLList(Character_Ref& chara) {

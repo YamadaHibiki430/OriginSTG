@@ -5,7 +5,7 @@ Enemy::Enemy() {
 	SetPosition(MathHelper_Random(-100.f,100.f), 100.0f);
 	hitarea = new HitArea();
 	hitarea->SetHitPosition(x, y);
-	hitarea->SetHitArea(10.f, 10.f, 10.f, 10.f);
+	hitarea->SetHitArea(-5.f, -5.f, 10.f, 10.f);
 	hitarea->SetHitType(H_TYPE_ENEMY);
 
 	model->SetScale(1.0f);
@@ -15,4 +15,13 @@ Enemy::Enemy() {
 void Enemy::Update() {
 	y -= 0.5f;
 	hitarea->SetHitPosition(x, y);
+	if (y < -100) {
+		remove();
+	}
+}
+
+void Enemy::Draw3D() {
+	model->SetPosition(Vector3(x, y, 0));
+	model->Draw();
+	hitarea->Draw();
 }

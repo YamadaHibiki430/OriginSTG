@@ -52,7 +52,7 @@ void HitArea::Draw() {
 	Vector3 end = GraphicsDevice.WorldToScreen(Vector3(x + hit_x + hit_width, y + hit_y + hit_height, 0));
 
 	canvas->DrawRect(start.x, start.y, end.x, end.y);
-	//canvas->DrawRect(x + hit_x, y + hit_y, hit_x + hit_width, hit_y + hit_height);
+	/*canvas->DrawRect(x + hit_x, y + hit_y, x + hit_x + hit_width, y + hit_y + hit_height);*/
 }
 
 

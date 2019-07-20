@@ -7,7 +7,7 @@ Player::Player() {
 	SetPosition(0.0f, 0.0f);
 	hitarea = new HitArea;
 	hitarea->SetHitPosition(x, y);
-	hitarea->SetHitArea(10.f,10.f,10.f,10.f);
+	hitarea->SetHitArea(-2.5f,-2.5f,5.f,5.f);
 	hitarea->SetHitType(H_TYPE_PLAYER);
 	
 	model->SetScale(1.0f);
@@ -27,8 +27,6 @@ void Player::Draw3D() {
 	model->SetPosition(Vector3(x, y, 0));
 	model->Draw();
 	std::for_each(Bullet_List.begin(), Bullet_List.end(), [](BulletProduct* bullet) {bullet->Draw3D(); });
-}
-void Player::DrawCanvas() {
 	hitarea->Draw();
 }
 
