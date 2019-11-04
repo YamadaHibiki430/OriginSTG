@@ -24,7 +24,7 @@ protected:
 	float x, y;
 	void remove() { remove_flag = true; }
 public:
-	
+	Character();
 	void SetModel(LPCTSTR file_name);
 	void SetPosition(float px, float py);
 	bool IsRemove() { return remove_flag; }

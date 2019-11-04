@@ -11,7 +11,7 @@ void MainScene::Update() {
 	}
 	std::for_each(Character_List.begin(), Character_List.end(), [](Character_Ref& chara) {chara->Update(); });
 
-	auto end = std::remove_if(Character_List.begin(), Character_List.end(), [](Character_Ref& chara) {chara->IsRemove(); });
+	auto end = std::remove_if(Character_List.begin(), Character_List.end(), [](Character_Ref& chara) {return chara->IsRemove(); });
 	Character_List.erase(end, Character_List.end());
 }
 void MainScene::Draw3D() {
